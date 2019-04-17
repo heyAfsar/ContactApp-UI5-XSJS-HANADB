@@ -1,0 +1,6 @@
+table.schemaName = "myschema";
+table.tableType = COLUMNSTORE;
+table.columns = [
+{name = "Name"; sqlType = VARCHAR ;length=30;nullable = false;},
+{name = "Phone"; sqlType = VARCHAR ;length=20;nullable = false;}];
+table.primaryKey.pkcolumns = ["Phone"];

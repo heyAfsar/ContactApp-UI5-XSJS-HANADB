@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    
+    <Dialog id="addPopup" title="{i18n>add}" resizable="true" contentWidth="550px" class="sapUiContentPadding" icon="sap-icon://add" >
+   
+   	<f:SimpleForm id="SimpleFormAdd" editable="true" layout="ResponsiveGridLayout" >
+   		<f:content>
+   			 <Label text="{i18n>name}" textAlign="Left"/>
+   			 <Input id="nameAdd"  class="sapUiTinyMarginBottom" />
+   			 <Label text="{i18n>phone}" textAlign="Left"/>
+   			 <Input id="contactAdd" editable="true" class="sapUiTinyMarginBottom"/>
+   		</f:content>
+   	</f:SimpleForm>
+	<beginButton>
+		<Button id="addBtn" text = "{i18n>save}"  press = "onSaveAdd" />
+	</beginButton>
+	<endButton>
+		<Button text = "{i18n>cancel}" press = "onCancelAdd" />
+	</endButton>
+   </Dialog>
+</core:FragmentDefinition>
